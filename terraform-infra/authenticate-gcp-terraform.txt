@@ -1,0 +1,12 @@
+# Necessary to install 
+
+# This command would create a new service account in GCP
+gcloud iam service-accounts create terraform-gcp-service-acc
+
+# Providing access to the service account
+
+gcloud projects add-iam-policy-binding terraform-project-439507 --member="serviceAccount:terraform-gcp-service-acc@terraform-project-439507.iam.gserviceaccount.com" --role="roles/editor"
+
+
+# Create a key to access the account
+gcloud iam service-accounts keys create terraform-keys.json --iam-account=terraform-gcp-service-acc@terraform-project-439507.iam.gserviceaccount.com

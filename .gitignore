@@ -1,0 +1,11 @@
+*.env
+.venv
+
+env/
+venv/ 
+aus-fuel/
+terraform-gcp-cred.json
+
+airflow.cfg
+airflow.db
+*.tfvars
