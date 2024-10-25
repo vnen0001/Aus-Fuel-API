@@ -9,3 +9,7 @@ terraform-gcp-cred.json
 airflow.cfg
 airflow.db
 *.tfvars
+*.hcl
+*.backup
+*.tfstate
+*.terraform
